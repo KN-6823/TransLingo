@@ -1,6 +1,6 @@
 # TransLingo: Connecting English and Marathi
 
-**TransLingo** is an NLP-based application designed to offer English-to-Marathi and Marathi-to-English translations, as well as text summarization, within an interactive chatbot interface. Additionally, it includes a MongoDB-backed complaint management system.
+**TransLingo** is an NLP-based application designed to offer English-to-Marathi and Marathi-to-English translations, as well as text summarization, within an interactive chatbot interface.
 
 ---
 
