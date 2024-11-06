@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #12C2E9, #F64F59);
+        }
+
+        .navbar {
+            background-color: #000000;
+        }
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            text-align: center;
+            font-size: 40px;
+            background: linear-gradient(90deg, #00b7ff, #00ff00); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+
+        .custom-about-container {
+            background-color: rgba(255, 255, 255, 0.349); /* Transparent white */
+            border-radius: 15px;
+            padding: 30px;
+            margin: 10px;
+            max-width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            
+            /* Glass effect */
+            backdrop-filter: blur(10px); /* Creates the blurred, frosted glass effect */
+            -webkit-backdrop-filter: blur(10px); /* For Safari */
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border to enhance the glassy effect */
+        }
+
+
+
+        .text-justify {
+            text-align: justify;
+            color: rgb(33, 32, 32);
+            line-height: 1.6; 
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .section-title h2 {
+            color: #000000;
+            font-size: 30px; 
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+            font-weight: bold; 
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); 
+        }
+
+        .important-points {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 0.5px; 
+            color: #000000;
+        }
+
+        .important-points h5 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .important-points ul {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0; 
+            padding-left: 20px;
+            color: rgb(33, 32, 32);
+        }
+
+        .important-points li {
+            margin-bottom: 8px; 
+            line-height: 1.5;
+        }
+
+
+        /* Text Styling */
+        h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        h6 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #7ec2f0;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        ul {
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .lottie-container {
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        /* Responsive adjustments */
+        @media (max-width: 576px) {
+            .container {
+                padding: 0;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm px-4 py-3">
+    <div class="container">
+        <h1 class="m-0 text-primary text-center font-weight-bold w-100">
+            TransLingo: Connecting English and Marathi
+        </h1>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<!-- About Section -->
+<div class="container-fluid py-4 fadeInUp">
+    <div class="custom-about-container">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title mb-2">
+                    <h2>Transforming Conversations: Effective English-Marathi Translation and Summarization</h2>
+                </div>
+                <hr>
+                <p class="mb-4 text-justify">Our NLP chatbot is designed to facilitate seamless communication between English and Marathi speakers. Leveraging advanced natural language processing techniques, the chatbot provides efficient translation and summarization services, ensuring users can communicate effectively, regardless of their language proficiency.</p>
+
+                <p class="mb-4 text-justify">With the ability to translate text from English to Marathi and vice versa, the chatbot caters to the diverse needs of users. Additionally, it offers summarization features that allow users to condense lengthy paragraphs into concise summaries in both languages. This functionality is particularly beneficial for students, professionals, and anyone looking to enhance their understanding of content in a different language.</p>
+
+                <div class="important-points">
+                    <h5 class="text-primary">Key Features:</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-check-circle text-success"></i> Real-time translation between English and Marathi.</li>
+                        <li><i class="fa fa-check-circle text-success"></i> Summarization of English and Marathi texts for quick understanding.</li>
+                        <li><i class="fa fa-check-circle text-success"></i> User-friendly interface for easy interaction and access.</li>
+                        <li><i class="fa fa-check-circle text-success"></i> Available 24/7 to assist with translation and summarization needs.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-5" style="min-height: 0px;">
+                <div class="position-relative h-100">
+                    <lottie-player
+                        src="https://lottie.host/d4e169d4-2cc3-43f2-821c-8dffd2bb8173/JyTWF8ve2N.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 100%; height: 100%;"
+                        loop
+                        autoplay
+                    ></lottie-player>
+                </div>
+            </div>            
+        </div>
+        <div class="chatbox__button-container">
+            <div class="chatbox__button">
+                <button class="chatbox-toggle" aria-label="Chat with us">
+                    <span class="sp">Chat with us</span> <!-- The label for the button -->
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About Section -->
+
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Welcome to our virtual assistant.</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+     </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+
+</html>
+
