@@ -24,7 +24,7 @@
   - Serves the chatbot and translation/summarization features.
 
 - **Static & Templates**:
-  - Frontend resources, including HTML and JavaScript.
+  - Frontend resources, including HTML, CSS and JavaScript.
 
 ---
 
