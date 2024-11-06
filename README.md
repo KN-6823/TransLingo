@@ -30,10 +30,10 @@
 
 ## Screenshots
 
-<div style="display: flex; justify-content: center;">
-  <img src="https://github.com/user-attachments/assets/7d5947ea-2ea0-46c3-b1f8-9ba60375ce5c" alt="TransLingo2" width="600" hspace="15" />
-  <img src="https://github.com/user-attachments/assets/cc2e2ff3-49d0-4d8c-8b28-f2485748d500" alt="TransLingo3" width="600" hspace="15" />
-  <img src="https://github.com/user-attachments/assets/3d4dd15b-6d49-4786-9ca3-7900a75e0c58" alt="TransLingo4" width="600" hspace="15" />
+<div style="display: flex; justify-content: center; gap: 30px; align-items: center; flex-wrap: wrap;">
+  <img src="https://github.com/user-attachments/assets/7d5947ea-2ea0-46c3-b1f8-9ba60375ce5c" alt="TransLingo2" width="600"/>
+  <img src="https://github.com/user-attachments/assets/cc2e2ff3-49d0-4d8c-8b28-f2485748d500" alt="TransLingo3" width="600"/>
+  <img src="https://github.com/user-attachments/assets/3d4dd15b-6d49-4786-9ca3-7900a75e0c58" alt="TransLingo4" width="600"/>
 </div>
 
 ---
